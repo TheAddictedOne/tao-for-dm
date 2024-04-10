@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tao for DM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      box-sizing: border-box;
+    }
+    * {
+      font-family: 'Questrial';
+    }
+    body {
+      background-color: #ddd;
+    }
+    section {
+      display: flex;
+      height: 200px;
+      width: 1000px;
+    }
+    section > div {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      border: 1px solid black;
+      margin: 10px;
+      box-shadow: 1px 1px black;
+    }
+    section > div:hover {
+      transform: translate(1px, 1px);
+      box-shadow: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .clickable {
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="clickable hidable">Lives</h1>
+    <div class="lives">
+      <h2>Live (close)</h2>
+      <section>
+        <div>
+          <img src="https://th.bing.com/th/id/OIG1.IokRRTCQVlA7T5kqCCew" />
+        </div>
+        <div>
+          <a target="_blank" href="https://player.local.dailymotion.com:9096/player.html?video=x6apzzt">local</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo-stage-01.dailymotion.com/player.html?video=x6apzzt">stage</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo-preprod.dailymotion.com/player.html?video=x6apzzt">preprod</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo.dailymotion.com/player.html?video=x6apzzt">prod</a>
+        </div>
+      </section>
+  
+      <h2>Live (2025)</h2>
+      <section>
+        <div>
+          <img src="https://th.bing.com/th/id/OIG2.31pGKzYskqgLgIwXahpz" />
+        </div>
+        <div>
+          <a target="_blank" href="https://player.local.dailymotion.com:9096/player.html?video=x5tbfwk">local</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo-stage-01.dailymotion.com/player.html?video=x5tbfwk">stage</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo-preprod.dailymotion.com/player.html?video=x5tbfwk">preprod</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo.dailymotion.com/player.html?video=x5tbfwk">prod</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script>
+    document.querySelector('.hidable').addEventListener('click', () => {
+      document.querySelector('.lives').classList.toggle('hidden')
+    })
+  </script>
+</body>
+</html>
