@@ -17,13 +17,22 @@
     body {
       background-color: #ddd;
     }
+    ul a {
+      padding: 10px 5px;
+      display: inline-block;
+      border: 1px solid black;
+      width: 200px;
+      margin: 5px;
+      background-color: white;
+    }
     section {
       display: flex;
       height: 200px;
-      width: 1000px;
+      width: 1200px;
     }
     section > div {
       background-color: white;
+      flex-direction: column;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -58,10 +67,19 @@
 </head>
 <body>
   <main>
+    <h1>Configs</h1>
+    <ul>
+      <li><a target="_blank" href="https://www.dailymotion.com/partner/x1yiwp4/media/live/schedule/x6apzzt">Live (close)</a></li>
+      <li><a target="_blank" href="https://www.dailymotion.com/partner/x1yiwp4/media/live/schedule/x5tbfwk">Live (2025)</a></li>
+      <li><a target="_blank" href="https://www.dailymotion.com/partner/x1yiwp4/embed/players">Players</a></li>
+    </ul>
     <h1 class="clickable hidable">Lives</h1>
     <div class="lives">
-      <h2><a target="_blank" href="https://www.dailymotion.com/partner/x1yiwp4/media/live/schedule/x6apzzt">Live (close)</a></h2>
       <section>
+        <div>
+          <div>Live (close)</div>
+          <div>With carousel</div>
+        </div>
         <div>
           <img src="https://th.bing.com/th/id/OIG1.IokRRTCQVlA7T5kqCCew" />
         </div>
@@ -78,9 +96,34 @@
           <a target="_blank" href="https://geo.dailymotion.com/player.html?video=x6apzzt">prod</a>
         </div>
       </section>
-  
-      <h2><a target="_blank" href="https://www.dailymotion.com/partner/x1yiwp4/media/live/schedule/x5tbfwk">Live (2025)</a></h2>
+
       <section>
+        <div>
+          <div>Live (close)</div>
+          <div>Without carousel</div>
+        </div>
+        <div>
+          <img src="https://th.bing.com/th/id/OIG1.IokRRTCQVlA7T5kqCCew" />
+        </div>
+        <div>
+          <a target="_blank" href="https://player.local.dailymotion.com:9096/player/xfv97.html?video=x6apzzt">local</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo-stage-01.dailymotion.com/player/xfv97.html?video=x6apzzt">stage</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo-preprod.dailymotion.com/player/xfv97.html?video=x6apzzt">preprod</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo.dailymotion.com/player/xfv97.html?video=x6apzzt">prod</a>
+        </div>
+      </section>
+  
+      <section>
+        <div>
+          <div>Live (2025)</div>
+          <div>With carousel</div>
+        </div>
         <div>
           <img src="https://th.bing.com/th/id/OIG2.31pGKzYskqgLgIwXahpz" />
         </div>
@@ -95,6 +138,28 @@
         </div>
         <div>
           <a target="_blank" href="https://geo.dailymotion.com/player.html?video=x5tbfwk">prod</a>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <div>Live (2025)</div>
+          <div>Without carousel</div>
+        </div>
+        <div>
+          <img src="https://th.bing.com/th/id/OIG2.31pGKzYskqgLgIwXahpz" />
+        </div>
+        <div>
+          <a target="_blank" href="https://player.local.dailymotion.com:9096/player/xfv97.html?video=x5tbfwk">local</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo-stage-01.dailymotion.com/player/xfv97.html?video=x5tbfwk">stage</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo-preprod.dailymotion.com/player/xfv97.html?video=x5tbfwk">preprod</a>
+        </div>
+        <div>
+          <a target="_blank" href="https://geo.dailymotion.com/player/xfv97.html?video=x5tbfwk">prod</a>
         </div>
       </section>
     </div>
